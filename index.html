@@ -8,14 +8,14 @@
 				width: auto;
 				background: gray;
 			}
-			h1:before {
-				content: var(--tg-viewport-height);
-			}
 		</style>
 	</head>
 
 	<body>
-		<h1>Next init data11</h1>
+		<h1 onclick="function expand() {
+			Telegram.expand();
+		}
+		expand()">Next init data112</h1>
 		<br/>
 		<h1 id="telegramInitData">placeholdr for initData</h1>
 		<script>
