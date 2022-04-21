@@ -2,24 +2,16 @@
 	<head>
 		<script src="https://telegram.org/js/telegram-web-app.js"></script>
 		<style>
-			body {
-				position: absolute;
-				height: var(--tg-viewport-height);
-				width: auto;
-				background: gray;
+			.header {
+				height: 50px;
+				background-color: darkgray;
 			}
 		</style>
 	</head>
 
 	<body>
-		<h1 onclick="function expand() {
-			Telegram.close();
-		}
-		expand()">Next init data1123</h1>
-		<br/>
-		<h1 id="telegramInitData">placeholdr for initData</h1>
-		<script>
-			document.getElementById("telegramInitData").innerText = Telegram.WebApp.initData;
-		</script>
+		<div class="header">
+			<div class="header_text">Заголовок</div>
+		</div>
 	</body>
 </html>
