@@ -1,6 +1,14 @@
 <html>
 	<head>
 		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+		<style>
+			body {
+				position: absolute;
+				height: var(--tg-viewport-height);
+				width: auto;
+				background: gray;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -8,7 +16,7 @@
 		<br/>
 		<h1 id="telegramInitData">placeholdr for initData</h1>
 		<script>
-			document.getElementById("telegramInitData").innerText = window.Telegram.WebApp.initData;
+			document.getElementById("telegramInitData").innerText = Telegram.WebApp.initData;
 		</script>
 	</body>
 </html>
